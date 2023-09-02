@@ -31,6 +31,10 @@ function App() {
 		fetch(`https://api.weatherapi.com/v1/current.json?key=e9585ab2b07548dc8cd120216230209&q=${city}}&aqi=no`)
 			.then(res => res.json())
 			.then(data => {
+				if (city === "" || data.error) {
+					alert("有効な都市名を入力してください");
+					return;
+				}
 				setResults({
 					country: data.location.country,
 					cityName: data.location.name,
