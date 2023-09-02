@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# react-typescript-weather-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 『はじめてつくるReactアプリ with TypeScript』
 
-## Available Scripts
+ （React + TypeScript入門シリーズ 1/2）
 
-In the project directory, you can run:
+続編[『はじめてさわるReact & JavaScript with TypeScript』](https://www.amazon.co.jp/dp/B09Q57Q9T1)
 
-### `npm start`
+### 書籍は3時間で終わらせ、TypeScript中心のWebアプリ作成に慣れる
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- TypeScriptとReactを深く理解するというより、以下の目的で作成する。
+- 基本的にReactは深掘りせず、TypeScript & Next.jsへのステップと考える
+- RESTfulでモダンなWebアプリケーションフレームワークの開発フローに数多く触れる
+  - 数多くコードを書いて慣れる（TypeScript >> React）
+  - 数時間程度で実際にインターネット上に公開できるWebアプリを作成する経験
+  - それをベースに以下のような応用をする（今回全てを網羅する必要はない）
+    - 追加機能の実装
+    - TailwindCSSを導入したデザインの変更
+    - デプロイ先をAWSに変更
+    - ページング機能の追加
+    - 外部APIを利用した機能の追加
+    - データベースとの連携（このアプリでは不要）
+    - Dockerを利用したデプロイ
+    - 自分で作った多言語によるAPIの利用
+      - 候補としては作成中のPython & SeleniumによるWebスクレイピング→JSONを返すAPI
+      - 上記の完成の為には、追加でFastAPIの学習が必要
+    - どのタイミングで何をどれくらい学習するかの選定と計画が必要
+- 以上のような応用を通して、Webアプリケーション開発の流れを理解する
+- あまり数多くの機能を詰め込んだり、一つの機能にこだわり過ぎず数多くの小規模アプリを作成する
