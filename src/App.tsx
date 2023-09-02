@@ -24,7 +24,9 @@ function App() {
 	const GetWeather = (e: any) => {
 		// ボタンを押した時にページがリロードされるのを防ぐ
 		e.preventDefault();
-		fetch("https://api.weatherapi.com/v1/current.json?key=e9585ab2b07548dc8cd120216230209&q=London&aqi=no")
+		// APIを使って天気を取得する
+		// テンプレートリテラルを使って、URLの中にstateの変数cityを埋め込む
+		fetch(`https://api.weatherapi.com/v1/current.json?key=e9585ab2b07548dc8cd120216230209&q=${city}}&aqi=no`)
 			.then(res => res.json())
 			.then(data => {
 				setResults({
