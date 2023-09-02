@@ -21,7 +21,9 @@ function App() {
 		conditionText: "",
 		icon: "",
 	});
-	const GetWeather = (e: any) => {
+	
+	// ここのeはイベントオブジェクト。Reactが定義している型を指定する(anyは極力残さないようにする)
+	const GetWeather = (e: React.FormEvent<HTMLFormElement>) => {
 		// ボタンを押した時にページがリロードされるのを防ぐ
 		e.preventDefault();
 		// APIを使って天気を取得する

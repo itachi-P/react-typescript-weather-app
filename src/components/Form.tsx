@@ -1,6 +1,7 @@
 type FormPropsType = {
 	setCity: React.Dispatch<React.SetStateAction<string>>
-	getWeather: (e: any) => void
+	// App.tsxと同じくeの型をanyからReact.FormEvent<HTMLFormElement>に修正
+	getWeather: (e: React.FormEvent<HTMLFormElement>) => void //voidは返り値がないことを示す
 }
 
 const Form = (props: FormPropsType) => {
