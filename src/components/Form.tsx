@@ -4,11 +4,12 @@ type FormPropsType = {
 	getWeather: (e: React.FormEvent<HTMLFormElement>) => void //voidは返り値がないことを示す
 }
 
-const Form = (props: FormPropsType) => {
+// props変数を介さずに直接{setCity, getWeather}を書いた方がコードがスッキリする（場合もある）
+const Form = ({setCity, getWeather}: FormPropsType) => {
 	return (
 		//ブラウザによっては<button onClick>では正しく動作しないので、<form onSubmit>に変更
-		<form onSubmit={props.getWeather}>
-			<input type="text" name="city" placeholder="都市名" onChange={e => props.setCity(e.target.value)} />
+		<form onSubmit={getWeather}>
+			<input type="text" name="city" placeholder="都市名" onChange={e => setCity(e.target.value)} />
 			<button type="submit">Get Weather</button> {/* onClickを削除 */}
 		</form>
 	);
