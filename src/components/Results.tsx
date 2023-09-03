@@ -1,15 +1,11 @@
+import { ResultsStateType } from "../App";
+
 type ResultsPropsType = {
-	results: {
-		country: string;
-		cityName: string;
-		temperature: string;
-		conditionText: string;
-		icon: string;
-	}
+	results: ResultsStateType;
 }
 
 // app.tsxから渡ってきた{results}は、変数propsを介さずとも直接使える
-const Results = ({results}: ResultsPropsType) => {
+const Results = ({ results }: ResultsPropsType) => {
 	const { country, cityName, temperature, conditionText, icon } = results;
 	return (
 		// 特にclassNameでスタイルが当てられているわけでもないので、divタグである必要はない
