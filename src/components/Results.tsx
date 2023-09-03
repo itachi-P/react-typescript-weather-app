@@ -12,7 +12,8 @@ type ResultsPropsType = {
 const Results = ({results}: ResultsPropsType) => {
 	const { country, cityName, temperature, conditionText, icon } = results;
 	return (
-		<div>
+		// 特にclassNameでスタイルが当てられているわけでもないので、divタグである必要はない
+		<>
 			{country &&
 				<div className="results-country">{results.country}</div>
 			}
@@ -28,7 +29,7 @@ const Results = ({results}: ResultsPropsType) => {
 					<span>{conditionText}</span>
 				</div>
 			}
-		</div>
+		</>
 	);
 };
 
