@@ -1,3 +1,3 @@
-const Loading = () => <div className="loading">通信中...</div>
+const Loading = () => <div className="loading">待</div>
 
 export default Loading;
